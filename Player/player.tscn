@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bqjd5t7a5hi0b"]
+[gd_scene load_steps=43 format=3 uid="uid://bqjd5t7a5hi0b"]
 
 [ext_resource type="Script" uid="uid://te5kmks41cj2" path="res://Player/Scripts/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://bllmrskr000oj" path="res://Player/Sprites/PlayerSprite02.png" id="2_k53q1"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://bmu768u6j25dy" path="res://Player/Scripts/State_Idle.gd" id="4_gwnis"]
 [ext_resource type="Script" uid="uid://ce1c8vc76h4vs" path="res://Player/Scripts/State_Stun.gd" id="5_k53q1"]
 [ext_resource type="Script" uid="uid://vywei020nd14" path="res://Player/Scripts/State_Attack.gd" id="6_fhl08"]
+[ext_resource type="Script" uid="uid://d2ecric8cihum" path="res://Player/Scripts/State_Walk.gd" id="8_dkpta"]
 [ext_resource type="AudioStream" uid="uid://dl2fp2yakcrok" path="res://Player/Audio/SwordSwoosh.wav" id="8_od3ui"]
 [ext_resource type="Script" uid="uid://bybk7filur88e" path="res://Player/Scripts/PlayerInteractionsHost.gd" id="10_apopc"]
 [ext_resource type="PackedScene" uid="uid://cx703r3ggkg78" path="res://General Nodes/Hurtbox/hurt_box.tscn" id="10_x3vf3"]
@@ -703,7 +704,7 @@ script = ExtResource("3_btcbx")
 script = ExtResource("4_gwnis")
 
 [node name="Walk" type="Node" parent="StateMachine"]
-script = ExtResource("5_k53q1")
+script = ExtResource("8_dkpta")
 
 [node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_fhl08")
